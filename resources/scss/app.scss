@@ -1,2 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 
+main{
+    .mycard{
+        min-height: 250px;
+        -webkit-box-shadow: 0px 14px 9px 9px #73A4FF;
+        -moz-box-shadow: 0px 14px 9px 9px #73A4FF;
+        -o-box-shadow: 0px 14px 9px 9px #73A4FF;
+        box-shadow: 0px 14px 9px 9px #73A4FF;
+        &:hover{
+            border:1px solid blue;
+            border-radius: 5px;
+            background-color: #86b0ffb2;
+            color:white;
+        }
+    }
+}

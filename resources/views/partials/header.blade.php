@@ -8,7 +8,7 @@
         [
             'url' => '/chi-siamo',
             'label' => 'Chi siamo',
-            'active' => true,
+            'active' => false,
         ],
         [
             'url' => '/contatti',
@@ -20,15 +20,15 @@
 
 <header>
     <nav>
-        <ul>
+        <ul class="list-unstyled d-flex justify-content-center ">
             @foreach ($links as $link)
                 <li>
                     @if ($link['active'])
-                        <a href="{{ $link['url'] }}">
+                        <a class="me-3" href="{{ $link['url'] }}">
                             {{ $link['label'] }}
                         </a>
                     @else
-                        <del>
+                        <del class="me-3">
                             {{ $link['label'] }}
                         </del>
                     @endif
